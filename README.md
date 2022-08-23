@@ -37,10 +37,10 @@ Las clases dentro de la carpeta model deben contener las variables con el mismo 
 9.		Carpeta adapter
 Las clases dentro de la carpeta Adapter son las encargadas de procesar la información obtenida de las consultas para asignarlas a cada ítem dentro de un recyclerview o directamente en un fragmento o una actividad
 
-10.	Carpeta menú
+10.	 Carpeta menú
 Dentro de esta carpeta se guardan los actionbar que son utilizados para navegar a través de la aplicación
 
-11.	Carpeta layout
+11.	 Carpeta layout
 Dentro de la carpeta layout existen tres tipos de layouts:
 Activity: que son las actividades de la aplicación
 Fragment: los fragmentos que se navegan por medio de los actionbar
