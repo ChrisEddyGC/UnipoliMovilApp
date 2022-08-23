@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Agenda institucional</string>
+    <string name="VerificationLobbyTitle">Ya te has registrado</string>
+    <string name="VerificationLobbyBody">Verifica tu correo electronico para poder iniciar en la aplicacion</string>
+    <string name="welcomeMessage">Bienvenias y bienvenidos</string>
+    <string name="MisionTitle">Mision</string>
+    <string name="Mision">Somos una INSTITUCIÓN PÚBLICA DE CALIDAD, con alto compromiso social, que imparte estudios de educación superior;
+        comprometida con la formación integral de profesionistas con valores, liderazgo y visión emprendedora;
+        mediante un modelo educativo de vanguardia basado en competencias y orientado a contribuir al desarrollo regional sustentable.</string>
+    <string name="WebPage">Plataforma Institucional</string>
+    <string name="ControlEscolar">Control escolar</string>
+
+    <string-array name="Career">
+        <item>Software</item>
+        <item>Civil</item>
+        <item>Redes y telecomunicaciones</item>
+        <item>Tecnologia ambiental</item>
+        <item>Tecnologias de manufactura</item>
+        <item>Administracion y gestion empresarial</item>
+    </string-array>
+    <string-array name="Grade">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="Group">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

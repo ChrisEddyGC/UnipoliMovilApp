@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/unipoli_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_communitynews"
+        android:icon="@drawable/unipoli_communitynews"
+        android:title="Comunidad" />
+    <item
+        android:id="@+id/nav_messages"
+        android:icon="@drawable/unipoli_messages"
+        android:title="Mensajes" />
+    <item
+        android:id="@+id/nav_departments"
+        android:icon="@drawable/unipoli_departments"
+        android:title="Directorio" />
+    <item
+        android:id="@+id/nav_calendar"
+        android:icon="@drawable/unipoli_calendar"
+        android:title="Calendario" />
+</menu>

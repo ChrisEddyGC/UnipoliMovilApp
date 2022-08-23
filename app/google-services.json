@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "998269719762",
+    "project_id": "unipoliappdatabase",
+    "storage_bucket": "unipoliappdatabase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998269719762:android:ecdbfe7b0fc0cf8503890b",
+        "android_client_info": {
+          "package_name": "com.example.unipolimovilapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "998269719762-4vpd0rnj7q6993vg4ga7rqgpbdfb8eqp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4YuX6mfgpUbVwZr_juiPqZ9palb9S9JQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "998269719762-4vpd0rnj7q6993vg4ga7rqgpbdfb8eqp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
