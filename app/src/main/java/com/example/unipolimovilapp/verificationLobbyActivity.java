@@ -15,6 +15,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class verificationLobbyActivity extends AppCompatActivity {
+    //aplicacion que se muestra si el usuario no ha verificado su cuenta por medio del correo
     Button btnSendVerification, btnLogOut;
     FirebaseAuth mAuth;
     FirebaseUser user;

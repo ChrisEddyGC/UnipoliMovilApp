@@ -56,6 +56,7 @@ public class messageAdapter extends FirestoreRecyclerAdapter<message, messageAda
         mFirestore = FirebaseFirestore.getInstance();
         mAuth = FirebaseAuth.getInstance();
 
+        //se llama a la coleccion UniversityStaff para obtener el nombre del usuario que envio el mensaje
         mFirestore.collection("UniversityStaff")
                 .document(message.getUser())
                 .get()
@@ -74,9 +75,6 @@ public class messageAdapter extends FirestoreRecyclerAdapter<message, messageAda
 
                     }
                 });
-
-
-        //para imagenes aqui iria la funcion picasso con la url guardada en la coleccion
 
     }
 

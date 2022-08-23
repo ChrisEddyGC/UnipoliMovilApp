@@ -45,6 +45,7 @@ public class communitynewAdapter extends FirestoreRecyclerAdapter<communitynew, 
                 .load(communitynew.getImageURL())
                 .placeholder(R.drawable.unipolilogo)
                 .into(viewHolder.image);
+        //io.github.imablanco:zoomy:1.0.0
         Zoomy.Builder builder = new Zoomy.Builder(activity)
                 .target(viewHolder.image)
                 .enableImmersiveMode(false)
@@ -62,7 +63,7 @@ public class communitynewAdapter extends FirestoreRecyclerAdapter<communitynew, 
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        //en esta clase se obtienen los objetos del item dentro del recyclerview que contendran la informacion
+        //en esta clase se obtienen los objetos del view_communitynew_single
         TextView message;
         ImageView image;
         ProgressBar progressBar;

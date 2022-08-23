@@ -13,6 +13,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
 public class MenuNavBar extends AppCompatActivity {
+
+    //actividad que se muestra unicamente a los usuarios en sesion activa
     BottomNavigationView bottomNavigationView;
     HomeFragment homeFragment = new HomeFragment();
     MessagesFragment messagesFragment = new MessagesFragment();
@@ -34,6 +36,7 @@ public class MenuNavBar extends AppCompatActivity {
         setContentView(R.layout.activity_menu_nav_bar);
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
 
+        //funcionalidad del bottom_nav_menu
         getSupportFragmentManager().beginTransaction().replace(R.id.container, homeFragment).commit();
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
@@ -71,6 +74,7 @@ public class MenuNavBar extends AppCompatActivity {
         return true;
     }
     public boolean onOptionsItemSelected(MenuItem item){
+        //funcionalidad del action_nav_menu
         switch (item.getItemId()){
             case R.id.nav_settings:
                 startActivity(new Intent(MenuNavBar.this, SettingsActivity.class));

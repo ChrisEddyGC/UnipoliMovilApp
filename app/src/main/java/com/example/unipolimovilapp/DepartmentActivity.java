@@ -50,7 +50,7 @@ public class DepartmentActivity extends AppCompatActivity {
 
         String id = getIntent().getStringExtra("id_department");
 
-        //funcion para guardar consultas offline
+        //funcion para guardar la informacion en cache para consultas offline
         FirebaseFirestoreSettings settings = new FirebaseFirestoreSettings.Builder()
                 .setPersistenceEnabled(true)
                 .build();
@@ -69,6 +69,7 @@ public class DepartmentActivity extends AppCompatActivity {
                                 .placeholder(R.drawable.unipolilogo)
                                 .into(depImage);
 
+                        //io.github.imablanco:zoomy:1.0.0
                         Zoomy.Builder builder = new Zoomy.Builder(DepartmentActivity.this)
                                 .target(depImage)
                                 .enableImmersiveMode(false)

@@ -52,7 +52,7 @@ public class DepartmentsFragment extends Fragment {
         mRecycler.setLayoutManager(new LinearLayoutManager(getContext()));
         mRecycler.setItemAnimator(null);
 
-        //funcion para guardar consultas offline
+        //funcion para guardar la informacion en cache para consultas offline
         FirebaseFirestoreSettings settings = new FirebaseFirestoreSettings.Builder()
                 .setPersistenceEnabled(true)
                 .build();

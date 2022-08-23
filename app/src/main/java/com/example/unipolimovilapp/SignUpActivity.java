@@ -87,6 +87,7 @@ public class SignUpActivity extends AppCompatActivity implements AdapterView.OnI
                 String newCareer = "";
                 Boolean BISstatus = btn_bis.isChecked();
 
+                //obtener el ciclo escolar en curso
                 Calendar calendar = Calendar.getInstance();
                 int day = calendar.get(Calendar.DAY_OF_MONTH);
                 int month = calendar.get(Calendar.MONTH) + 1;

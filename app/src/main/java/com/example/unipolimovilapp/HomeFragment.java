@@ -24,6 +24,7 @@ public class HomeFragment extends Fragment {
         hlWebPage = view.findViewById(R.id.btn_webPage);
         hlControl = view.findViewById(R.id.btn_control);
 
+        //dirigir a la pagina institucional
         hlWebPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -31,6 +32,8 @@ public class HomeFragment extends Fragment {
                 startActivity(new Intent(Intent.ACTION_VIEW, uri));
             }
         });
+
+        //dirigir a control escolar
         hlControl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

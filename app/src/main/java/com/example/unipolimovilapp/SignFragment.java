@@ -12,6 +12,7 @@ import android.widget.Button;
 
 public class SignFragment extends Fragment {
 
+    //fragmento que redirige a los formularios activiti_login y activity_sign_up
     Button btn_Signin, btn_Signup;
     View view;
     @Override

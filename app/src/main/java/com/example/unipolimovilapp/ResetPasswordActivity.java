@@ -32,6 +32,7 @@ public class ResetPasswordActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String emailRequester = email.getText().toString().trim();
+                //enviar correo de solicitud de reasignacion de contraseña al usuario en sesion activa
                 mAuth.sendPasswordResetEmail(emailRequester).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {

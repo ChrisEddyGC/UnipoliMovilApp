@@ -36,12 +36,15 @@ public class departmentAdapter extends FirestoreRecyclerAdapter<department,depar
     @Override
     protected void onBindViewHolder(@NonNull ViewHolder viewHolder, int position, @NonNull department department) {
         //en esta clase se le asigna el valor obtenido de la base de datos a los items
+
+        //se guarda el id de cada view_department_single que corresponde a Departments
         DocumentSnapshot documentSnapshot = getSnapshots()
                 .getSnapshot(viewHolder.getAbsoluteAdapterPosition());
         final String id = documentSnapshot.getId();
 
         viewHolder.Department.setText(department.getName());
 
+        //al hacer click en el view_department_single se llama al activity_Department con el id del view seleccionado
         viewHolder.Department.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

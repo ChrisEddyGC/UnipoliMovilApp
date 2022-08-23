@@ -75,6 +75,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void LoginUser(String userEmail, String userPassword) {
+        //busqueda para verificar que el usuario que solicita iniciar sesion sea un estudiante
         mFirestore.collection("Students")
                 .whereEqualTo("email", userEmail)
                 .get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -83,6 +84,7 @@ public class LoginActivity extends AppCompatActivity {
                         if(task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 if(userEmail.equals(document.getString("email"))){
+                                    //verificar si el usuario tiene su cuenta verificada
                                     mAuth.signInWithEmailAndPassword(userEmail, userPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                                         @Override
                                         public void onComplete(@NonNull Task<AuthResult> task) {

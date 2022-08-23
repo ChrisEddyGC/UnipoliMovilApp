@@ -25,6 +25,7 @@ import com.google.firebase.firestore.Query;
 
 public class MainActivity extends AppCompatActivity {
 
+    //la actividad inicial de la aplicacion
     BottomNavigationView bottomNavigationView;
     HomeFragment homeFragment = new HomeFragment();
     CommunityNewsFragment communityNewsFragment = new CommunityNewsFragment();
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         }
         bottomNavigationView = findViewById(R.id.bottomMainNavigationView);
 
+        //funcionalidad del bottom_main_nav_menu
         getSupportFragmentManager().beginTransaction().replace(R.id.Maincontainer,homeFragment).commit();
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
@@ -85,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
     public boolean onOptionsItemSelected(MenuItem item){
+        //funcionalidad del action_main_nav_menu
         switch (item.getItemId()){
             case R.id.nav_sign:
                 curFragment = 5;

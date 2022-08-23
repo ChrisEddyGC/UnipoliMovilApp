@@ -111,6 +111,7 @@ public class ProfileFragment extends Fragment implements FirebaseAuth.AuthStateL
                         curUserGroup += " BIS";
                     }
 
+                    //se obtiene el ciclo escolar en curso
                     Calendar calendar = Calendar.getInstance();
                     int day = calendar.get(Calendar.DAY_OF_MONTH);
                     int month = calendar.get(Calendar.MONTH) + 1;
@@ -130,6 +131,7 @@ public class ProfileFragment extends Fragment implements FirebaseAuth.AuthStateL
                     career.setText(curUserCareer);
                     group.setText(curUserGroup);
                     period.setText(curUserPeriod);
+                    //obtener el schedule correspondiente al grupo asignado al estudiante
                     mFirestore.collection("Schedules")
                             .whereEqualTo("career", document.getString("career"))
                             .whereEqualTo("grade",document.getString("grade"))
@@ -145,6 +147,7 @@ public class ProfileFragment extends Fragment implements FirebaseAuth.AuthStateL
                                                             Picasso.get()
                                                                     .load(document.getString("imageURL"))
                                                                     .into(schedule);
+                                                            //io.github.imablanco:zoomy:1.0.0
                                                             Zoomy.Builder builder = new Zoomy.Builder((Activity) view.getContext())
                                                                     .target(schedule)
                                                                     .enableImmersiveMode(false)
@@ -165,6 +168,7 @@ public class ProfileFragment extends Fragment implements FirebaseAuth.AuthStateL
         }
     }
     private String getCareer (String career){
+        //cambiar el valor de string a mostrar en el perfil de usuario dependiendo de la carrera dentro de la coleccion Students
         switch (career){
         case "ISW":
             return "Ing. en software";

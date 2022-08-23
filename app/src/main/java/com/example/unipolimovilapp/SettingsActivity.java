@@ -86,6 +86,7 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
 
         FirebaseUser user = mAuth.getCurrentUser();
         if(user != null){
+            //obtener la informacion del usuario para llenar el formulario de actualizacion de datos
             mFirestore.collection("Students")
                     .document(user.getUid())
                     .get()
@@ -180,6 +181,7 @@ public class SettingsActivity extends AppCompatActivity implements AdapterView.O
         btn_delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //eliminar la cuenta
                 String userEmail = emailDelete.getText().toString().trim();
                 if(userEmail.isEmpty()){
                     Toast.makeText(SettingsActivity.this, "Ingrese correo para verificar su identidad", Toast.LENGTH_SHORT).show();

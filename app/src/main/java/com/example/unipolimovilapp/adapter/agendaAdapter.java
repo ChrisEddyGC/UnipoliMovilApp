@@ -57,7 +57,7 @@ public class agendaAdapter extends FirestoreRecyclerAdapter<Agenda,agendaAdapter
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        //en esta clase se obtienen los objetos del item dentro del recyclerview que contendran la informacion
+        //en esta clase se obtienen los objetos del view_agenda_single
         ProgressBar progressBar;
         ImageView image;
 

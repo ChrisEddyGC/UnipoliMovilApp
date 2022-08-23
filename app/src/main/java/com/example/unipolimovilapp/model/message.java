@@ -4,6 +4,7 @@ package com.example.unipolimovilapp.model;
 import com.google.firebase.Timestamp;
 
 public class message {
+    //las variables en esta seccion deben tener el mismo nombre que el campo dentro de la coleccion Messages
     Timestamp createdAt;
     String message,title,user;
 
