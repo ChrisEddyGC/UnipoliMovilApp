@@ -3,7 +3,11 @@
 
 para el desarrollo de la aplicacion se utilizo android studio
         Android Studio Chipmunk | 2021.2.1 Patch 1
-
+        
+	Manuales tecnicos
+  
+	https://drive.google.com/drive/folders/1qZuX3Tc5rMVfKwOUcBGvNQatYbNWCJwa?usp=sharing
+ 
 Desglose de funciones.
 
 1.		Home
