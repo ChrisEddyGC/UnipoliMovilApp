@@ -4,7 +4,7 @@
 para el desarrollo de la aplicacion se utilizo android studio
         Android Studio Chipmunk | 2021.2.1 Patch 1
 
-Desglose de funciones
+Desglose de funciones.
 
 1.		Home
 Este fragmento es el único que muestra información estática o local de la aplicación, lo único dinámico son dos botones que dirigen al usuario a su navegador web con enlaces hacia la página web institucional y al control escolar
